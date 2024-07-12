@@ -1,6 +1,17 @@
+import Banner from "@/packages/Banner/Banner";
+import Layout from "@/packages/Layout/Layout";
 import MainBanner from "@/packages/Main/components/MainBanner";
-import { MENU_ITEMS } from "@/packages/Main/constants/common";
+import MktBanner from "@/packages/Main/components/MktBanner";
+import {
+  MainBannerText,
+  MENU_ITEMS,
+  SERVICE_LIST_ITEMS,
+  ServiceConnectionModule,
+  ServiceMktModule,
+} from "@/packages/Main/constants/common";
 import Menu from "@/packages/Menu/Menu";
+import ServiceLayer from "@/packages/ServiceLayer/ServiceLayer";
+import ServiceModule from "@/packages/ServiceModule/ServiceModule";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,6 +22,13 @@ export default function Home() {
       </Head>
       <Menu items={MENU_ITEMS} />
       <MainBanner />
+      <section className="container mx-auto">
+        <Layout children={<ServiceLayer list={SERVICE_LIST_ITEMS} />} />
+      </section>
+      <ServiceModule content={ServiceConnectionModule} />
+      <Banner title={MainBannerText} />
+      <ServiceModule reverse content={ServiceMktModule} />
+      <MktBanner />
     </main>
   );
 }
