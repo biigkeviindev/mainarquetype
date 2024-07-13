@@ -41,8 +41,15 @@ const Menu = ({ items }: MenuProps) => {
         } flex border-b border-[#f1f2f3] w-full items-center py-2 backdrop-blur-lg h-20 `}
       >
         <div className="flex items-center justify-between w-full px-[18px]">
-          <h2 className={scrollActive ? "text-white mb-0" : "mb-0"}>
-            PixelCode
+          <h2
+            className={
+              scrollActive
+                ? "flex flex-col items-center text-white mb-0"
+                : "flex flex-col items-center mb-0"
+            }
+          >
+            <img className="w-[40px] mb-2" src="/logo.png" />
+            <img className="w-[52px]" src="/logoname.svg" />
           </h2>
           <div>
             <nav className="hidden lg:flex gap-8 text-sm">
