@@ -41,7 +41,6 @@ const MktBanner = () => {
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="flex justify-between">
-            <img src="/google.svg" alt="Google" />
             <img src="/facebook.svg" alt="Facebook" />
             <img src="/instagram.svg" alt="Instagram" />
           </div>
