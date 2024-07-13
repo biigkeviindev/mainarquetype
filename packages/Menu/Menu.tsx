@@ -40,7 +40,7 @@ const Menu = ({ items }: MenuProps) => {
           scrollActive
             ? " sticky top-0 bg-black shadow-md"
             : " relative bg-white "
-        } flex shadow-white items-center py-2 backdrop-blur-lg h-20 `}
+        } flex shadow-white w-full items-center py-2 backdrop-blur-lg h-20 `}
       >
         <div className="flex items-center justify-between w-full px-[18px]">
           <h2 className={scrollActive ? "text-white mb-0" : "mb-0"}>
