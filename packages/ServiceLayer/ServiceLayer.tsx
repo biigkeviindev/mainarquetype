@@ -18,7 +18,7 @@ const ServiceLayer = ({ list }: ServiceLayerProps) => {
     <section className="pt-24 px-7">
       <div className="flex flex-wrap">
         {list.map((service, key) => (
-          <ServiceItem item={service} />
+          <ServiceItem key={key} item={service} />
         ))}
       </div>
     </section>

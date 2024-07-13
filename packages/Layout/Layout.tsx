@@ -4,7 +4,7 @@ type LayoutProp = {
   children: ReactNode;
 };
 const Layout = ({ children }: LayoutProp) => {
-  return <section className="container mx-auto">{children}</section>;
+  return <section className="container mx-auto w-full">{children}</section>;
 };
 
 export default Layout;
