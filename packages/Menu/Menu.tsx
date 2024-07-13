@@ -48,8 +48,11 @@ const Menu = ({ items }: MenuProps) => {
                 : "flex flex-col items-center mb-0"
             }
           >
-            <img className="w-[40px] mb-2" src="/logo.png" />
-            <img className="w-[52px]" src="/logoname.svg" />
+            {!scrollActive && <img className="w-[40px] mb-2" src="/logo.png" />}
+            <img
+              className={`${scrollActive ? "w-[8rem]" : "w-[52px]"}`}
+              src={`${scrollActive ? "/logo-alphatek.svg" : "/logoname.svg"}`}
+            />
           </h2>
           <div>
             <nav className="hidden lg:flex gap-8 text-sm">
