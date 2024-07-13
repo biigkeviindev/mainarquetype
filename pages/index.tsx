@@ -19,9 +19,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <main>
-      <Head>
-        <script src="https://kit.fontawesome.com/5334a5f967.js"></script>
-      </Head>
       <Menu items={MENU_ITEMS} />
       <MainBanner />
       <div className="container mx-auto w-full">
@@ -34,7 +31,9 @@ export default function Home() {
         </div>
       </div>
       <section className="container mx-auto">
-        <Layout children={<ServiceLayer list={SERVICE_LIST_ITEMS} />} />
+        <Layout>
+          <ServiceLayer list={SERVICE_LIST_ITEMS} />
+        </Layout>
       </section>
       <ServiceModule content={ServiceConnectionModule} />
       <Banner title={MainBannerText} />
