@@ -1,8 +1,10 @@
 import Banner from "@/packages/Banner/Banner";
+import Footer from "@/packages/Footer/Footer";
 import Layout from "@/packages/Layout/Layout";
 import MainBanner from "@/packages/Main/components/MainBanner";
 import MktBanner from "@/packages/Main/components/MktBanner";
 import {
+  linksFooterPage,
   MainBannerText,
   MENU_ITEMS,
   SERVICE_LIST_ITEMS,
@@ -38,6 +40,7 @@ export default function Home() {
       <Banner title={MainBannerText} />
       <ServiceModule reverse content={ServiceMktModule} />
       <MktBanner />
+      <Footer links={linksFooterPage} />
     </main>
   );
 }

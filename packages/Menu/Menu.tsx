@@ -43,7 +43,9 @@ const Menu = ({ items }: MenuProps) => {
         } flex shadow-white items-center py-2 backdrop-blur-lg h-20 `}
       >
         <div className="flex items-center justify-between w-full px-[18px]">
-          <h2 className={scrollActive ? "text-white" : ""}>PixelCode</h2>
+          <h2 className={scrollActive ? "text-white mb-0" : "mb-0"}>
+            PixelCode
+          </h2>
           <div>
             <nav className="hidden lg:flex gap-8 text-sm">
               {items.map((item, key: number) => (
@@ -55,8 +57,8 @@ const Menu = ({ items }: MenuProps) => {
             <button
               className={
                 scrollActive
-                  ? "bg-white text-black cursor-pointer "
-                  : " cursor-pointer "
+                  ? "bg-white text-black cursor-pointer shadow-md"
+                  : " cursor-pointer shadow-md"
               }
             >
               Hablar con un experto

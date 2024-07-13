@@ -77,3 +77,33 @@ export const ServiceMktModule = {
 
 export const MainBannerText =
   "Somos muy rápidos sin perder un píxel de calidad. ¿Cuándo necesitas tu proyecto?";
+
+export const linksFooterPage = [
+  {
+    title: "Sobre Nosotros",
+    sublinks: [
+      {
+        itemTitle: "¿Qué es .....?",
+        itemLink: "",
+      },
+    ],
+  },
+  {
+    title: "Soluciones Para",
+    sublinks: [
+      {
+        itemTitle: "¿Qué es .....?",
+        itemLink: "",
+      },
+    ],
+  },
+  {
+    title: "Recursos",
+    sublinks: [
+      {
+        itemTitle: "¿Qué es .....?",
+        itemLink: "",
+      },
+    ],
+  },
+];
