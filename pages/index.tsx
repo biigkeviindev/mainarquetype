@@ -24,15 +24,18 @@ export default function Home() {
       <div className="container mx-auto w-full">
         <div className="pt-24 px-7 flex justify-center">
           <img
-            className="w-full"
-            src="https://nexbu.es/wp-content/uploads/2023/11/266aadf1-4345543_10ww0ww000000000000028-800x800.png"
+            className="w-full bg-[#fff8dc] rounded-lg shadow-lg"
+            src="/mkt-image.png"
             alt="Banner principal movil"
           />
         </div>
       </div>
       <section className="container mx-auto">
         <Layout>
-          <ServiceLayer list={SERVICE_LIST_ITEMS} />
+          <ServiceLayer
+            title="Los mejores servicios en:"
+            list={SERVICE_LIST_ITEMS}
+          />
         </Layout>
       </section>
       <ServiceModule content={ServiceConnectionModule} />

@@ -29,7 +29,7 @@ export const SERVICE_LIST_ITEMS = [
       "Llevamos a cabo proyectos web que funcionan gracias aun gran diseño, una programación perfecta y una comunicación potente.",
     price: 1800,
     link: "/",
-    logo: "",
+    logo: "/pulgar.svg",
   },
   {
     title: "Tienda online",
@@ -37,7 +37,7 @@ export const SERVICE_LIST_ITEMS = [
       "Vendemos tiendas que venden porque son coherentes con tu sector, con tu proyecto, con tu cliente. Tiendas online que te dan confianza.",
     price: 2900,
     link: "/",
-    logo: "",
+    logo: "/snap.svg",
   },
   {
     title: "SEM y SEO",
@@ -45,7 +45,7 @@ export const SERVICE_LIST_ITEMS = [
       "Tenemos planes de Posicionamiento y Redes sociales para todos los públicos. Creatividad y analítica se dan la mano.",
     price: "Consultar",
     link: "/",
-    logo: "",
+    logo: "/v.svg",
   },
   {
     title: "Web3 Y Blockchain",
@@ -53,7 +53,7 @@ export const SERVICE_LIST_ITEMS = [
       "Tenemos planes de Posicionamiento y Redes sociales para todos los públicos. Creatividad y analítica se dan la mano.",
     price: "Consultar",
     link: "/",
-    logo: "",
+    logo: "/good.svg",
   },
 ];
 

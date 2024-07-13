@@ -47,7 +47,10 @@ const MainBanner = () => {
 
   return (
     <Layout>
-      <section className="pt-24 px-7">
+      <section className="pt-12 px-7">
+        <div className="bg-black rounded-lg mb-8 shadow-md">
+          <img src="/services.png" alt="" />
+        </div>
         <div className="mb-4 pr-20">
           <h1>
             Desarrollamos el mundo de tu{" "}
