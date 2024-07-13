@@ -22,6 +22,15 @@ export default function Home() {
       </Head>
       <Menu items={MENU_ITEMS} />
       <MainBanner />
+      <div className="container mx-auto w-full">
+        <div className="pt-24 px-7 flex justify-center">
+          <img
+            className="w-full"
+            src="https://nexbu.es/wp-content/uploads/2023/11/266aadf1-4345543_10ww0ww000000000000028-800x800.png"
+            alt="Banner principal movil"
+          />
+        </div>
+      </div>
       <section className="container mx-auto">
         <Layout children={<ServiceLayer list={SERVICE_LIST_ITEMS} />} />
       </section>

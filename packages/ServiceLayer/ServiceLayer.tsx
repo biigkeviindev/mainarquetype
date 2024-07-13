@@ -29,7 +29,7 @@ const ServiceItem = ({ item }: any) => {
   return (
     <div className="w-1/2 flex flex-col items-center mb-10">
       <h4 className="text-center font-medium mb-7">{item.title}</h4>
-      <p className="text-center h-32">{item.description}</p>
+      <p className="text-center h-20 mb-4">{item.description}</p>
       <button className="border border-black bg-white text-black">
         Desde {item.price} {typeof item.price !== "string" && "€"}
       </button>

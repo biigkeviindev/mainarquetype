@@ -1,13 +1,61 @@
 import Layout from "@/packages/Layout/Layout";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { generarCadenaRandomFc } from "../utils";
 
 const MainBanner = () => {
+  const services = ["Web", "Ecommerce", "Marketing"];
+  const [generatedTitle, setGeneratedTitle] = useState(
+    services[Math.floor(Math.random() * 4)]
+  );
+  const [showGeneretedTitle, setShowGeneratedTitle] = useState(true);
+
+  const [serviceOption, setUseOption] = useState("");
+
+  const changeTitle = () => {};
+
+  useEffect(() => {
+    let randomServiceOpt = Math.floor(Math.random() * 2);
+
+    const modifyServiceTitle = setInterval(() => {
+      setUseOption(services[randomServiceOpt]);
+    }, 2000);
+    return () => clearInterval(modifyServiceTitle);
+  }, []);
+
+  useEffect(() => {
+    const modifyServiceTitle = setInterval(() => {
+      setGeneratedTitle((prevEstado: any) => generarCadenaRandomFc());
+      changeTitle();
+    }, 200);
+    return () => clearInterval(modifyServiceTitle);
+  }, []);
+
+  useEffect(() => {
+    const modifyServiceTitle = setInterval(() => {
+      setGeneratedTitle((prevEstado: any) => generarCadenaRandomFc());
+      setShowGeneratedTitle(false);
+    }, 5000);
+    return () => clearInterval(modifyServiceTitle);
+  }, []);
+
+  useEffect(() => {
+    const modifyServiceTitle = setInterval(() => {
+      setShowGeneratedTitle(true);
+    }, 10000);
+    return () => clearInterval(modifyServiceTitle);
+  }, []);
+
   return (
     <Layout
       children={
         <section className="pt-24 px-7">
           <div className="mb-4 pr-20">
-            <h1>Diseñamos el universo de tu web</h1>
+            <h1>
+              Desarrollamos el mundo de tu{" "}
+              <span className="font-bold text-[27px]">
+                {showGeneretedTitle ? generatedTitle : serviceOption}
+              </span>
+            </h1>
             <span>
               Somos una agencia súper digital con más de 87.600 horas de
               experiencia. Ayudamos a empresas, grandes y pequeñas, diseñando

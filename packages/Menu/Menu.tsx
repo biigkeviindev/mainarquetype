@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 
 type Item = {
@@ -10,11 +10,40 @@ type MenuProps = {
 };
 
 const Menu = ({ items }: MenuProps) => {
+  const [scrollActive, setScrollActive] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setScrollActive(true);
+    } else {
+      setScrollActive(false);
+    }
+  };
+
+  useEffect(() => {
+    // Añadir el event listener al montar el componente
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpiar el event listener al desmontar el componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  useEffect;
+
+  console.log(scrollActive ? "mostrar" : "ocultar");
+
   return (
     <>
-      <header className="flex items-center py-2 bg-white backdrop-blur-lg h-20 shadow-md">
+      <header
+        className={`${
+          scrollActive
+            ? " sticky top-0 bg-black shadow-md"
+            : " relative bg-white "
+        } flex shadow-white items-center py-2 backdrop-blur-lg h-20 `}
+      >
         <div className="flex items-center justify-between w-full px-[18px]">
-          <h2>PixelCode</h2>
+          <h2 className={scrollActive ? "text-white" : ""}>PixelCode</h2>
           <div>
             <nav className="hidden lg:flex gap-8 text-sm">
               {items.map((item, key: number) => (
@@ -23,8 +52,20 @@ const Menu = ({ items }: MenuProps) => {
             </nav>
           </div>
           <div className="flex lg:hidden items-center gap-3">
-            <button>Hablar con un experto</button>
-            <TiThMenu size={22} />
+            <button
+              className={
+                scrollActive
+                  ? "bg-white text-black cursor-pointer "
+                  : " cursor-pointer "
+              }
+            >
+              Hablar con un experto
+            </button>
+            <TiThMenu
+              className="cursor-pointer"
+              color={scrollActive ? "white" : "black"}
+              size={22}
+            />
           </div>
         </div>
       </header>
