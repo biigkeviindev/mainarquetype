@@ -37,10 +37,8 @@ const Menu = ({ items }: MenuProps) => {
     <>
       <header
         className={`${
-          scrollActive
-            ? " sticky top-0 bg-black shadow-md"
-            : " relative bg-white "
-        } flex shadow-white w-full items-center py-2 backdrop-blur-lg h-20 `}
+          scrollActive ? " sticky top-0 bg-black shadow-md" : " relative "
+        } flex border-b border-[#f1f2f3] w-full items-center py-2 backdrop-blur-lg h-20 `}
       >
         <div className="flex items-center justify-between w-full px-[18px]">
           <h2 className={scrollActive ? "text-white mb-0" : "mb-0"}>

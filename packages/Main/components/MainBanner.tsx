@@ -9,7 +9,7 @@ const MainBanner = () => {
   );
   const [showGeneretedTitle, setShowGeneratedTitle] = useState(true);
 
-  const [serviceOption, setUseOption] = useState("");
+  const [serviceOption, setUseOption] = useState("Web");
 
   const changeTitle = () => {};
 
