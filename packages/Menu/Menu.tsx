@@ -1,6 +1,7 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import MobileMenu from "../MobileMenu/MobileMenu";
+import Link from "next/link";
 
 type Item = {
   content: string | ReactNode;
@@ -32,8 +33,6 @@ const Menu = ({ items }: MenuProps) => {
   }, []);
   useEffect;
 
-  console.log(scrollActive ? "mostrar" : "ocultar");
-
   return (
     <>
       <header
@@ -42,19 +41,23 @@ const Menu = ({ items }: MenuProps) => {
         } flex border-b border-[#f1f2f3] w-full items-center py-2 backdrop-blur-lg h-20 `}
       >
         <div className="flex items-center justify-between w-full px-[18px]">
-          <h2
-            className={
-              scrollActive
-                ? "flex flex-col items-center text-white mb-0"
-                : "flex flex-col items-center mb-0"
-            }
-          >
-            {!scrollActive && <img className="w-[40px] mb-2" src="/logo.png" />}
-            <img
-              className={`${scrollActive ? "w-[8rem]" : "w-[52px]"}`}
-              src={`${scrollActive ? "/logo-alphatek.svg" : "/logoname.svg"}`}
-            />
-          </h2>
+          <Link href="/">
+            <h2
+              className={
+                scrollActive
+                  ? "flex flex-col items-center text-white mb-0"
+                  : "flex flex-col items-center mb-0"
+              }
+            >
+              {!scrollActive && (
+                <img className="w-[40px] mb-2" src="/logo.png" />
+              )}
+              <img
+                className={`${scrollActive ? "w-[8rem]" : "w-[52px]"}`}
+                src={`${scrollActive ? "/logo-alphatek.svg" : "/logoname.svg"}`}
+              />
+            </h2>
+          </Link>
           <div>
             <nav className="hidden lg:flex gap-8 text-sm">
               {items.map((item, key: number) => (
