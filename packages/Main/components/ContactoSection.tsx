@@ -18,7 +18,7 @@ const ContactoSection = () => {
           </div>
           <div className="w-full py-8 px-4 bg-white text-black rounded-lg shadow min-h-[200px]">
             <div>
-              <h2 className="text-[16px] font-semibold<">
+              <h2 className="text-[14px] font-semibold<">
                 NOS ENCANTARÍA CONOCER TU PROYECTO
               </h2>
               <p>
