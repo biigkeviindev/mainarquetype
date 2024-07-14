@@ -28,6 +28,7 @@ h4 {
 p,
 span {
   font-size: 13px;
+  line-height: 1.6em !important;
 }
 
 button {
