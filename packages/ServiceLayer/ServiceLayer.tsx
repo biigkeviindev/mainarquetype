@@ -35,7 +35,7 @@ const ServiceItem = ({ item }: any) => {
     <div className="w-1/2 flex flex-col items-center mb-10">
       <img src={item.logo} alt={item.title} className="w-[4rem] h-[4rem]" />
       <h4 className="text-center font-medium mb-7">{item.title}</h4>
-      <p className="text-center m-h-20 mb-4">{item.description}</p>
+      <p className="text-center h-[6rem] mb-4">{item.description}</p>
       <button className="border border-black bg-white text-black shadow-md">
         Desde {item.price} {typeof item.price !== "string" && "€"}
       </button>

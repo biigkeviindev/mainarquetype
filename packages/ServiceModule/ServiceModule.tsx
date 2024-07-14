@@ -28,7 +28,7 @@ const ServiceModule = ({ content, reverse = false }: ServiceModule) => {
             <button className="w-full">{content.btnTitle}</button>
           </div>
           <div className="flex justify-center items-center w-1/2">
-            <img src="" alt="Service" />
+            <img src={content.imgLink} className="w-[10rem]" alt="Service" />
           </div>
         </div>
       </section>

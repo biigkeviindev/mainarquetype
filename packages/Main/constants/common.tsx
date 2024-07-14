@@ -26,7 +26,7 @@ export const SERVICE_LIST_ITEMS = [
   {
     title: "Diseño web",
     description:
-      "Llevamos a cabo proyectos web que funcionan gracias aun gran diseño, una programación perfecta y una comunicación potente.",
+      "Crea una presencia online impactante con nuestros diseños web personalizados. Haz que tu empresa destaque y atraiga a más clientes.",
     price: 1800,
     link: "/",
     logo: "/pulgar.svg",
@@ -34,23 +34,23 @@ export const SERVICE_LIST_ITEMS = [
   {
     title: "Tienda online",
     description:
-      "Vendemos tiendas que venden porque son coherentes con tu sector, con tu proyecto, con tu cliente. Tiendas online que te dan confianza.",
+      "Lleva tu tienda al mundo digital con nuestra solución ecommerce. Vende más y mejor en cualquier lugar.",
     price: 2900,
     link: "/",
     logo: "/snap.svg",
   },
   {
-    title: "SEM y SEO",
+    title: "Marketing",
     description:
-      "Tenemos planes de Posicionamiento y Redes sociales para todos los públicos. Creatividad y analítica se dan la mano.",
+      "Mejora tu presencia online con SEO y SEM. Aumenta tu visibilidad, atrae tráfico y genera más ventas.",
     price: "Consultar",
     link: "/",
     logo: "/v.svg",
   },
   {
-    title: "Web3 Y Blockchain",
+    title: "Blockchain",
     description:
-      "Tenemos planes de Posicionamiento y Redes sociales para todos los públicos. Creatividad y analítica se dan la mano.",
+      "Desarrollamos smart contracts, NFTs y criptomonedas. Inicia tu negocio en el mundo de la tecnología blockchain.",
     price: "Consultar",
     link: "/",
     logo: "/good.svg",
@@ -58,25 +58,25 @@ export const SERVICE_LIST_ITEMS = [
 ];
 
 export const ServiceConnectionModule = {
-  title: "Enchufa tu agencia a nuestra agencia",
+  title: "Imagina, nosotros lo desarrollamos",
   description:
-    "Aproximadamente, el 50% de nuestro volumen de negocio proviene De agencias de publicidad, programadores, estudios de diseño o incluso freelances que tienen picos de trabajo, o bien no tienen recursos en ciertas áreas de especialización.",
+    "Cualquiera que sea tu necesidad tecnológica, estamos aquí para desarrollarla. Desde aplicaciones específicas hasta sistemas complejos, adaptamos nuestras soluciones a tu negocio.",
   btnTitle: "Ver más",
   btnLink: "",
-  imgLink: "",
+  imgLink: "/technologies.png",
 };
 
 export const ServiceMktModule = {
-  title: "Si no tienes web YA no existes",
+  title: "¿Aún sin web? ¡Hazte visible con nosotros!",
   description:
-    "Nuestras webs son un espectáculo visual que convive a la perfección con tu modelo de negocio. Slogans que mueven montañas, una experiencia de usuario que nunca defrauda y una programación impecable son ADN Factoryfy.",
+    "¡Tu negocio merece brillar en el mundo digital! En la era actual, tener una presencia online no es una opción, ¡es una necesidad! Deja que mi experiencia en diseño web te ayude a destacarte y atraer más clientes. ¡Contáctame hoy mismo!",
   btnTitle: "Ver más",
   btnLink: "",
-  imgLink: "",
+  imgLink: "/spin.png",
 };
 
 export const MainBannerText =
-  "Somos muy rápidos sin perder un píxel de calidad. ¿Cuándo necesitas tu proyecto?";
+  "No dejes que tus ideas se queden en el papel. ¡Contáctanos ahora y juntos crearemos algo extraordinario para tu negocio!";
 
 export const linksFooterPage = [
   {
