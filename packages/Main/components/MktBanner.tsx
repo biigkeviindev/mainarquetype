@@ -14,9 +14,9 @@ const servicios = [
 const MktBanner = () => {
   return (
     <Layout>
-      <section className="container mx-auto pt-24 px-7 pb-12">
+      <section className="container bg-[#f1f2f3] mx-auto pt-24 mt-6 px-7 pb-12">
         <div className="flex mb-4">
-          <div className="w-[75%]">
+          <div className="w-full">
             <h2 className="font-bold mb-5">Hacemos campañas como estas</h2>
             <p className="mb-8">
               Llegar a lo más alto y construir una relación positiva con
@@ -30,13 +30,10 @@ const MktBanner = () => {
                   <span>
                     <MdArrowForwardIos />
                   </span>
-                  {service}
+                  <b>{service}</b>
                 </p>
               ))}
             </div>
-          </div>
-          <div className="flex justify-center items-center w-[25%]">
-            <img src="" alt="Service" />
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
