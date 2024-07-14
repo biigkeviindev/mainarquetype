@@ -90,16 +90,16 @@ const FormularioContacto: React.FC = () => {
         ></textarea>
       </div>
 
-      <p className="text-sm text-gray-500">
+      <p className="text-[12px] text-gray-500">
         Al enviar este formulario aceptas la política de privacidad
       </p>
 
       <div>
         <button
           type="submit"
-          className="bg-black text-white cursor-pointer shadow-md"
+          className="w-full font-bold bg-black text-white cursor-pointer shadow-md"
         >
-          Enviar
+          Solicitar contacto
         </button>
       </div>
     </form>

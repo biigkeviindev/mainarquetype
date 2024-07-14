@@ -1,5 +1,6 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import { TiThMenu } from "react-icons/ti";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 type Item = {
   content: string | ReactNode;
@@ -71,10 +72,14 @@ const Menu = ({ items }: MenuProps) => {
             >
               Hablar con un experto
             </button>
-            <TiThMenu
+            {/* <TiThMenu
               className="cursor-pointer"
               color={scrollActive ? "white" : "black"}
               size={22}
+            /> */}
+            <MobileMenu
+              items={items}
+              colorIcon={scrollActive ? "white" : "black"}
             />
           </div>
         </div>

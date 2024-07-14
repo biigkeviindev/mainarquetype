@@ -1,24 +1,31 @@
 export const MENU_ITEMS = [
   {
     content: <span>SEM</span>,
+    url: "/services/seo-sem",
   },
   {
     content: <span>MARKETING</span>,
+    url: "/services/marketing-digital",
   },
   {
     content: <span>ECOMMERCE</span>,
+    url: "/services/seo-sem",
   },
   {
     content: <span>DESARROLLO WEB</span>,
+    url: "/services/diseno-web",
   },
   {
     content: <span>APPS</span>,
+    url: "/services/apps",
   },
   {
     content: <span>WEB3</span>,
+    url: "/services/blockchain",
   },
   {
     content: <span>CONTACTO</span>,
+    url: "/contacto",
   },
 ];
 
