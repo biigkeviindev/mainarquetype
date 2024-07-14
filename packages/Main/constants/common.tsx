@@ -9,7 +9,7 @@ export const MENU_ITEMS = [
   },
   {
     content: <span>ECOMMERCE</span>,
-    url: "/services/seo-sem",
+    url: "/services/ecommerce",
   },
   {
     content: <span>DESARROLLO WEB</span>,

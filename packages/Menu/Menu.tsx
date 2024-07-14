@@ -75,11 +75,6 @@ const Menu = ({ items }: MenuProps) => {
             >
               Hablar con un experto
             </button>
-            {/* <TiThMenu
-              className="cursor-pointer"
-              color={scrollActive ? "white" : "black"}
-              size={22}
-            /> */}
             <MobileMenu
               items={items}
               colorIcon={scrollActive ? "white" : "black"}
