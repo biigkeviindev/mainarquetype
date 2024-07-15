@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../Layout/Layout";
 
-const LandHeader = ({ title, subtitle }: any) => {
+const LandHeader = ({ title, subtitle, btnTitle }: any) => {
   const sectionStyle = {
     backgroundImage: 'url("/bg-banner.webp")',
     backgroundSize: "cover",
